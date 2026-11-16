@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: CONFIG-DEV
   datasource:
     url: jdbc:postgresql://ep-damp-sunset-ad9l2hor-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&prepareThreshold=0&tcpKeepAlive=true
     username: neondb_owner
