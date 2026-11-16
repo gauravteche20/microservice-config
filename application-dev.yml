@@ -1,13 +1,6 @@
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
 spring:
+  application:
+    name: CONFIG-PROD
   datasource:
     url: jdbc:postgresql://ep-damp-sunset-ad9l2hor-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&prepareThreshold=0&tcpKeepAlive=true
     username: neondb_owner
@@ -30,3 +23,12 @@ spring:
       hibernate:
         format_sql: true
     open-in-view: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
